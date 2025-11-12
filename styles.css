@@ -156,36 +156,15 @@ h1 {
   margin: 0 0 1rem;
 }
 
-.qr-skeleton {
+.qr-image {
+  display: block;
   width: 180px;
   height: 180px;
   margin: 0 auto 1rem;
   border-radius: 16px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
-    linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
-  background-size: 14px 14px;
-  position: relative;
-}
-
-.qr-skeleton::after,
-.qr-skeleton::before {
-  content: '';
-  position: absolute;
-  width: 42px;
-  height: 42px;
-  border: 3px solid rgba(255, 255, 255, 0.8);
-}
-
-.qr-skeleton::before {
-  top: 14px;
-  left: 14px;
-}
-
-.qr-skeleton::after {
-  bottom: 14px;
-  right: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  object-fit: cover;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 main {
